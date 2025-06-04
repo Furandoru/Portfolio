@@ -1,16 +1,43 @@
-import { motion } from 'framer-motion';
+import { Box, Typography, Button } from "@mui/material";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
+    <Box
+      component={motion.div}
+      initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -50 }}
+      exit={{ opacity: 0, y: -40 }}
       transition={{ duration: 0.6 }}
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        px: 2,
+      }}
     >
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm a Front-End Developer learning React and building cool stuff!</p>
-    </motion.div>
+      <Typography variant="h2" gutterBottom>
+        Hello, I'm <span style={{ color: "#1976d2" }}>Furan</span>
+      </Typography>
+
+      <Typography variant="h5" sx={{ mb: 4, maxWidth: "600px" }}>
+        A passionate Full-Stack Developer crafting responsive websites and scalable back-end solutions.
+      </Typography>
+
+      <Button
+        variant="contained"
+        size="large"
+        component={Link}
+        to="/projects"
+        sx={{ mt: 2 }}
+      >
+        View My Work
+      </Button>
+    </Box>
   );
 };
 

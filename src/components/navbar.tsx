@@ -1,39 +1,64 @@
-import { AppBar, Toolbar, Button, Box, Typography } from '@mui/material';
-import { Link, useLocation } from 'react-router-dom';
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { Link, useLocation } from "react-router-dom";
 
-const navLinks = [
-  { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
-  { label: 'Projects', path: '/projects' },
-  { label: 'Contact', path: '/contact' },
+const navItems = [
+  { label: "Home", path: "/" },
+  { label: "About", path: "/about" },
+  { label: "Projects", path: "/projects" },
+  { label: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
   const location = useLocation();
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#0a192f', boxShadow: 'none' }}>
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', px: 3 }}>
-        <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-          MyPortfolio
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{
+        backgroundColor: "transparent",
+        color: "text.primary",
+        boxShadow: "none",
+        py: 1,
+      }}
+    >
+      <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Typography
+          variant="h6"
+          component={Link}
+          to="/"
+          sx={{ textDecoration: "none", color: "inherit" }}
+        >
+          Welcome to My Portfolio
         </Typography>
 
-        <Box sx={{ display: 'flex', gap: 2 }}>
-          {navLinks.map((link) => (
+        <Box>
+          {navItems.map((item) => (
             <Button
-              key={link.path}
+              key={item.path}
               component={Link}
-              to={link.path}
+              to={item.path}
               sx={{
-                color: location.pathname === link.path ? '#64ffda' : '#ffffff',
-                fontWeight: '500',
-                '&:hover': {
-                  color: '#64ffda',
-                  backgroundColor: 'transparent',
+                position: "relative",
+                color: location.pathname === item.path ? "primary.main" : "text.primary",
+                fontWeight: location.pathname === item.path ? "bold" : "normal",
+                mx: 1,
+                "&::after": {
+                  content: '""',
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  height: "2px",
+                  width: location.pathname === item.path ? "100%" : "0%",
+                  backgroundColor: "primary.main",
+                  transition: "width 0.3s ease-in-out",
+                },
+                "&:hover::after": {
+                  width: "100%",
                 },
               }}
             >
-              {link.label}
+              {item.label}
             </Button>
           ))}
         </Box>

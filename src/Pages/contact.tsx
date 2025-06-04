@@ -8,7 +8,7 @@ const About = () => {
       exit={{ opacity: 0, y: -40 }}
       transition={{ duration: 0.4 }}
     >
-      <h1>About Me</h1>
+      <h1>Contact</h1>
       <p>This is the about page of my portfolio.</p>
     </motion.div>
   );
