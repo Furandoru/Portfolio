@@ -9,7 +9,7 @@ const About = () => {
       transition={{ duration: 0.4 }}
     >
       <h1>Contact</h1>
-      <p>This is the about page of my portfolio.</p>
+      
     </motion.div>
   );
 };
