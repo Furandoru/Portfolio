@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# My Full-Stack Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! I’m Furan, a **Full-Stack Developer**. This portfolio showcases my front-end and back-end skills, including projects I’ve worked on using a range of technologies and frameworks.
 
-Currently, two official plugins are available:
+## 🔧 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Front-End:
+- **React** - Building dynamic and responsive user interfaces.
+- **TypeScript** - Adding type safety and enhancing JavaScript development.
+- **Material UI** - UI components to speed up front-end development.
+- **Framer Motion** - Animations for smooth and interactive user experiences.
+- **React Router** - For handling navigation and routing within the app.
 
-## Expanding the ESLint configuration
+### Back-End:
+- **Node.js** - Backend server runtime for building scalable applications.
+- **Express.js** - Web framework for Node.js to build APIs.
+- **MongoDB** - NoSQL database for storing application data.
+- **JWT (JSON Web Token)** - For secure authentication and authorization.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Dev Tools:
+- **Git** - Version control to manage source code.
+- **Docker** - Containerizing applications for easier deployment.
+- **Nginx** - Web server for serving the application.
+- **Postman** - For testing APIs during development.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📚 About Me
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+I am a **Full-Stack Developer** with experience in both front-end and back-end development. I focus on building **scalable** and **efficient applications**. My skill set spans across:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Front-End**: HTML, CSS, JavaScript, React, Material UI.
+- **Back-End**: Node.js, Express, MongoDB, RESTful API.
+- **Version Control**: Git and GitHub for collaboration and deployment.
+
+---
+
+## 🖥️ Projects
+
+Here are some of the projects I’ve built, demonstrating my full-stack development abilities:
+
+### 1. **[Project Name]**
+   - **Description**: A full-stack web application built with **React** for the front-end and **Node.js/Express** for the back-end. It features user authentication, a database to store data, and RESTful API endpoints.
+   - **Technologies Used**: .
+   - **Link**: [GitHub Repository](#) | [Live Demo](#)
+
+### 2. **[Project Name]**
+   - **Description**: A collaborative platform where users can create, share, and collaborate on documents. The project includes both front-end and back-end functionality, with real-time features using **Socket.io**.
+   - **Technologies Used**: .
+   - **Link**: [GitHub Repository](#) | [Live Demo](#)
+
+### 3. **[Project Name]**
+   - **Description**: A full-stack e-commerce website with features like product listings, user authentication, and payment processing.
+   - **Technologies Used**: .
+   - **Link**: [GitHub Repository](#) | [Live Demo](#)
