@@ -28,6 +28,20 @@ const Home = () => {
         A passionate Full-Stack Developer crafting responsive websites and scalable back-end solutions.
       </Typography>
 
+            <Box
+  sx={{
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    width: "300px",
+    height: "auto",
+    zIndex: -1,
+    opacity: 0.7,
+  }}
+>
+  <img src="src/assets/Data extraction-amico.svg" alt="Character" style={{ width: "100%" }} />
+</Box>
+
       <Button
         variant="contained"
         size="large"
@@ -38,6 +52,7 @@ const Home = () => {
         View My Work
       </Button>
     </Box>
+    
   );
 };
 

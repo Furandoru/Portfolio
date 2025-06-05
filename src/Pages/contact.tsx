@@ -1,17 +1,66 @@
-import { motion } from 'framer-motion';
+import { Box, Typography, IconButton, Stack } from "@mui/material";
+import { motion } from "framer-motion";
+import { GitHub, LinkedIn, Email } from "@mui/icons-material";
 
-const About = () => {
+const Contact = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
+    <Box
+      component={motion.div}
+      initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -40 }}
-      transition={{ duration: 0.4 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 0.6 }}
+      sx={{
+        minHeight: "100vh",
+        px: 4,
+        py: 8,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        background: "linear-gradient(to bottom, #f0f2f5, #ffffff)",
+      }}
     >
-      <h1>Contact</h1>
-      
-    </motion.div>
+      <Typography variant="h3" gutterBottom>
+        Let's Connect
+      </Typography>
+
+      <Typography variant="h6" sx={{ mb: 3 }}>
+        Feel free to reach out to me on any of these platforms:
+      </Typography>
+
+      <Stack direction="row" spacing={4}>
+        <IconButton
+          component="a"
+          href="https://github.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ color: "#333" }}
+        >
+          <GitHub fontSize="large" />
+        </IconButton>
+
+        <IconButton
+          component="a"
+          href="https://linkedin.com/in/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+          sx={{ color: "#0077b5" }}
+        >
+          <LinkedIn fontSize="large" />
+        </IconButton>
+
+        <IconButton
+          component="a"
+          href="mailto:youremail@example.com"
+          sx={{ color: "#d44638" }}
+        >
+          <Email fontSize="large" />
+        </IconButton>
+      </Stack>
+    </Box>
   );
 };
 
-export default About;
+export default Contact;
