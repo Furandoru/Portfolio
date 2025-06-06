@@ -33,7 +33,7 @@ const Contact = () => {
       <Stack direction="row" spacing={4}>
         <IconButton
           component="a"
-          href="https://github.com/yourusername"
+          href="https://github.com/Furandoru"
           target="_blank"
           rel="noopener noreferrer"
           sx={{ color: "#333" }}
@@ -43,7 +43,7 @@ const Contact = () => {
 
         <IconButton
           component="a"
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/win-aung-92b153365/"
           target="_blank"
           rel="noopener noreferrer"
           sx={{ color: "#0077b5" }}
@@ -53,7 +53,9 @@ const Contact = () => {
 
         <IconButton
           component="a"
-          href="mailto:youremail@example.com"
+          href="https://mail.google.com/mail/?view=cm&to=wamewame112@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           sx={{ color: "#d44638" }}
         >
           <Email fontSize="large" />

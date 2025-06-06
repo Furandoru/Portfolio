@@ -21,7 +21,7 @@ const Home = () => {
       }}
     >
       <Typography variant="h2" gutterBottom>
-        Hello, I'm <span style={{ color: "#1976d2" }}>Furan</span>
+        Hello, I'm <span style={{ color: "#1976d2" }}>Win Aung</span>
       </Typography>
 
       <Typography variant="h5" sx={{ mb: 4, maxWidth: "600px" }}>
