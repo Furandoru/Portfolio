@@ -20,7 +20,6 @@ Welcome to my portfolio! I’m Furan, a **Full-Stack Developer**. This portfolio
 ### Dev Tools:
 - **Git** - Version control to manage source code.
 - **Docker** - Containerizing applications for easier deployment.
-- **Nginx** - Web server for serving the application.
 - **Postman** - For testing APIs during development.
 
 ---
